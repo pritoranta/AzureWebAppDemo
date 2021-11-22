@@ -1,0 +1,15 @@
+﻿@page
+@model ManageFormsModel
+@{
+    ViewData["Title"] = "Manage Forms"; // Sets the page's title in browser.
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<h3>@ViewData["Message"]</h3>
+
+<hr />
+<div>@ViewData["Entry"]</div>
+<hr />
+
+<form><input type="submit" value="OK" class="submit" onClick="@Model.Dequeue()"/></form>
